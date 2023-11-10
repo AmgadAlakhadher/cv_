@@ -1,0 +1,117 @@
+.section{
+    background: var(--black);
+    width: 100% !important;
+    padding: 100px 30px;
+}
+.section__content__left{
+    margin: auto;
+}
+.section__content__left__title{
+    color: var(--white);
+    font-size: 4rem;
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+}
+.section__content__left__title .span{
+    color: var(--yallow);
+}
+.section__content__left__desc{
+    padding: 30px 0;
+    word-spacing: 4px;
+    font-size: 1.1rem;
+    color: var(--light-grey);
+}
+.section__content__left__btn, .section__content__left__btn_download{
+    border-radius: 25px;
+    font-size: 1.2rem;
+    padding: 12px 16px;
+    text-transform: capitalize;
+    margin: 0 5px;
+    color: var(--white);
+    cursor: pointer;
+    transition: background .5s;
+}
+
+.section__content__left__btn.hireMe{
+    // background: linear-gradient(#dd5e89,#f7bb97);
+    border: none;
+    background-color: #D8835A;
+}
+.section__content__left__btn_download{
+    border-radius: 0;
+    border: solid 1px #D8835A;
+    background-color: transparent;
+}
+html[data-theme="dark"] .section__content__left__btn_download{
+  background-image: linear-gradient( #D8835A, #1D3739) 4;
+
+}
+.section__content__left__btn_download:hover{
+    background: rgba($color: #fff, $alpha: .3);
+}
+
+.section__content__right{
+    margin: auto;
+}
+.section__content__right__box{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: var(--skeleton);
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.section__content__right__box_img{
+    border-radius: 50%;
+}
+@media (max-width: 1024px){
+    .section__content__left__title{
+        font-size: 3.5rem;
+    }
+}
+@media (max-width:992px){
+    .section__content{
+        flex-direction: column;
+    }
+    .section__content__left{
+        order: 2;
+    }
+    .section__content__left__title{
+        font-size: 3rem;
+    }
+    .section__content__right{
+        order: 1;
+    }
+    .section__content__right__box{
+        margin-top: 0 ;
+    }
+}
+
+@media (max-width: 769px){
+    .section__content__left__title{
+        font-size: 2rem;
+    }
+    .section__content__left__btn.hireMe{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .section__content__left__btn_download{
+        display: block;
+        text-align: center;
+    }
+    .section__content__right__box{
+        width: 200px;
+        height: 200px;
+    }
+}
+@media (max-width: 490px){
+    .section__content__left__title{
+        font-size: 2rem;
+    }
+    .section__content__right__box{
+        width: 150px;
+        height: 150px;
+    }
+   
+}
